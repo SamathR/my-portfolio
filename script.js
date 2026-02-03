@@ -5,6 +5,7 @@ const navLinks = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('section');
 const backToTop = document.getElementById('backToTop');
 const contactForm = document.getElementById('contactForm');
+const skillProgresses = document.querySelectorAll('.skill-progress');
 
 // Mobile Menu Toggle
 hamburger.addEventListener('click', () => {
@@ -68,9 +69,22 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Animate skill bars on scroll
+const animateSkills = () => {
+    skillProgresses.forEach(progress => {
+        const progressPosition = progress.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.2;
+        
+        if (progressPosition < screenPosition) {
+            const width = progress.getAttribute('data-width');
+            progress.style.width = width + '%';
+        }
+    });
+};
+
 // Animate elements on scroll
 const animateOnScroll = () => {
-    const elements = document.querySelectorAll('.skill-card, .project-card');
+    const elements = document.querySelectorAll('.skill-item, .project-card');
     const windowHeight = window.innerHeight;
     
     elements.forEach(element => {
@@ -84,7 +98,7 @@ const animateOnScroll = () => {
 };
 
 // Set initial state for animated elements
-document.querySelectorAll('.skill-card, .project-card').forEach(element => {
+document.querySelectorAll('.skill-item, .project-card').forEach(element => {
     element.style.opacity = '0';
     element.style.transform = 'translateY(20px)';
     element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
@@ -96,10 +110,10 @@ if (contactForm) {
         e.preventDefault();
         
         // Get form values
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const subject = document.getElementById('subject').value;
-        const message = document.getElementById('message').value;
+        const name = this.querySelector('input[type="text"]').value;
+        const email = this.querySelector('input[type="email"]').value;
+        const subject = this.querySelector('input[placeholder="Subject"]').value;
+        const message = this.querySelector('textarea').value;
         
         // Simple validation
         if (!name || !email || !subject || !message) {
@@ -125,16 +139,21 @@ backToTop.addEventListener('click', (e) => {
     });
 });
 
-// Add scroll event listener for animations
-window.addEventListener('scroll', animateOnScroll);
+// Add scroll event listeners
+window.addEventListener('scroll', () => {
+    animateSkills();
+    animateOnScroll();
+});
 
-// Initial check for animations on page load
+// Initial animation on page load
 window.addEventListener('load', () => {
+    animateSkills();
     animateOnScroll();
     
     // Console welcome message
     console.log("🚀 Portfolio loaded successfully!");
     console.log("👨‍💻 Welcome to Samath Lakshan's Portfolio");
+    console.log("🎨 Professional Dark Theme with Stable Colors");
     console.log("📧 Email: samath.lakshan@example.com");
     console.log("📍 Location: Colombo, Sri Lanka");
 });
@@ -147,40 +166,25 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// Add keyboard accessibility for navigation
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && navMenu.classList.contains('active')) {
-        navMenu.classList.remove('active');
-        hamburger.innerHTML = '<i class="fas fa-bars"></i>';
-    }
-});
-
-// Preloader (optional - you can remove if not needed)
-window.addEventListener('load', () => {
-    // You can add a preloader here if you want
-    // For example: document.getElementById('preloader').style.display = 'none';
-});
-
-// Simple typing effect for home section (optional enhancement)
+// Typing effect for greeting (optional)
 function initTypingEffect() {
-    const tagline = document.querySelector('.tagline');
-    if (!tagline) return;
+    const greeting = document.querySelector('.greeting');
+    if (!greeting) return;
     
-    const text = tagline.textContent;
-    tagline.textContent = '';
+    const text = greeting.textContent;
+    greeting.textContent = '';
     let i = 0;
     
     function typeWriter() {
         if (i < text.length) {
-            tagline.textContent += text.charAt(i);
+            greeting.textContent += text.charAt(i);
             i++;
             setTimeout(typeWriter, 50);
         }
     }
     
-    // Start typing effect after a short delay
-    setTimeout(typeWriter, 1000);
+    setTimeout(typeWriter, 500);
 }
 
-// Uncomment the line below if you want to use the typing effect
-// initTypingEffect();
+// Initialize typing effect
+initTypingEffect();

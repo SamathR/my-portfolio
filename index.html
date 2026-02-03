@@ -6,14 +6,14 @@
     <title>Samath Lakshan | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <h2 class="logo">Samath<span class="logo-highlight">.</span></h2>
+            <h2 class="logo">Samath<span class="logo-highlight">L</span></h2>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -32,42 +32,44 @@
         <div class="container">
             <div class="home-content">
                 <div class="home-text">
-                    <p class="greeting animate__animated animate__fadeInDown">Hello, I'm</p>
-                    <h1 class="name animate__animated animate__fadeInUp">Samath Lakshan</h1>
-                    <h2 class="title animate__animated animate__fadeInUp">Full Stack <span class="highlight">Developer</span></h2>
-                    <p class="description animate__animated animate__fadeIn">
-                        I create beautiful, functional web applications with clean code and modern technologies.
-                    </p>
+                    <h4 class="greeting animate__animated animate__fadeInDown">Hello, I'm</h4>
+                    <h1 class="name animate__animated animate__fadeInUp">Samath <span class="highlight">Lakshan</span></h1>
+                    <h2 class="title animate__animated animate__fadeInUp">Full Stack Developer</h2>
+                    <p class="tagline animate__animated animate__fadeIn">Building digital experiences with clean code and modern technologies</p>
                     <div class="cta-buttons animate__animated animate__fadeIn">
                         <a href="#projects" class="btn btn-primary">
                             <i class="fas fa-code"></i> View Projects
                         </a>
-                        <a href="#contact" class="btn btn-secondary">
+                        <a href="#contact" class="btn btn-outline">
                             <i class="fas fa-paper-plane"></i> Contact Me
                         </a>
                     </div>
                 </div>
                 <div class="home-image animate__animated animate__zoomIn">
-                    <div class="hero-image">
-                        <div class="image-wrapper">
-                            <div class="code-bg">
-                                <pre><code>
-<span style="color: #e06c75">const</span> developer = {
-    <span style="color: #98c379">name</span>: <span style="color: #98c379">'Samath Lakshan'</span>,
-    <span style="color: #98c379">role</span>: <span style="color: #98c379">'Full Stack Developer'</span>,
-    <span style="color: #98c379">skills</span>: [<span style="color: #98c379">'HTML'</span>, <span style="color: #98c379">'CSS'</span>, <span style="color: #98c379">'JS'</span>, <span style="color: #98c379">'Java'</span>, <span style="color: #98c379">'Python'</span>],
-    <span style="color: #98c379">passion</span>: <span style="color: #98c379">'Creating digital solutions'</span>
-};</code></pre>
+                    <div class="floating-shape shape-1"></div>
+                    <div class="floating-shape shape-2"></div>
+                    <div class="floating-shape shape-3"></div>
+                    <div class="hero-img">
+                        <div class="img-container">
+                            <div class="code-display">
+                                <pre><code><span class="code-keyword">class</span> <span class="code-class">Developer</span> {
+    <span class="code-property">name</span> = <span class="code-string">"Samath Lakshan"</span>;
+    <span class="code-property">role</span> = <span class="code-string">"Full Stack Developer"</span>;
+    <span class="code-property">skills</span> = [<span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>, <span class="code-string">"JavaScript"</span>, 
+                 <span class="code-string">"Java"</span>, <span class="code-string">"Python"</span>];
+    
+    <span class="code-function">code()</span> {
+        <span class="code-keyword">return</span> <span class="code-string">"Elegant solutions"</span>;
+    }
+}</code></pre>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <a href="#about">
-                <i class="fas fa-chevron-down"></i>
-            </a>
+            <div class="scroll-down">
+                <a href="#about"><i class="fas fa-chevron-down"></i></a>
+            </div>
         </div>
     </section>
 
@@ -80,48 +82,69 @@
             </div>
             <div class="about-content">
                 <div class="about-image">
-                    <div class="profile-frame">
+                    <div class="profile-card">
                         <div class="profile-img">
-                            <i class="fas fa-user-circle"></i>
+                            <div class="img-wrapper">
+                                <div class="initial">SL</div>
+                            </div>
                         </div>
-                        <div class="profile-details">
-                            <div class="detail">
+                        <div class="profile-info">
+                            <h3>Samath Lakshan</h3>
+                            <p class="role">Full Stack Developer</p>
+                            <div class="location">
                                 <i class="fas fa-map-marker-alt"></i>
                                 <span>Colombo, Sri Lanka</span>
                             </div>
-                            <div class="detail">
-                                <i class="fas fa-graduation-cap"></i>
-                                <span>Computer Science Student</span>
+                        </div>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <div class="stat-number">10+</div>
+                                <div class="stat-label">Projects</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">5+</div>
+                                <div class="stat-label">Skills</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="about-text">
-                    <h3>Turning Ideas into <span class="highlight">Digital Reality</span></h3>
-                    <p>
-                        I'm a passionate software developer with a focus on creating elegant solutions to complex problems. 
-                        My journey in technology began with curiosity about how things work, and it has evolved into a 
-                        dedicated pursuit of building meaningful digital experiences.
-                    </p>
-                    <p>
-                        When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
-                        or learning about software architecture and design patterns.
-                    </p>
+                    <h3>Turning <span class="highlight">Ideas</span> Into Reality</h3>
+                    <p>I'm a passionate software developer with a keen eye for detail and a love for creating elegant solutions. My journey in tech started with curiosity and has evolved into a dedicated pursuit of building meaningful digital experiences.</p>
                     
-                    <div class="stats">
-                        <div class="stat">
-                            <div class="stat-number">10+</div>
-                            <div class="stat-label">Projects Completed</div>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="detail-content">
+                                <h4>Education</h4>
+                                <p>BSc in Computer Science</p>
+                            </div>
                         </div>
-                        <div class="stat">
-                            <div class="stat-number">5+</div>
-                            <div class="stat-label">Technologies</div>
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="detail-content">
+                                <h4>Experience</h4>
+                                <p>2+ Years Development</p>
+                            </div>
                         </div>
-                        <div class="stat">
-                            <div class="stat-number">2+</div>
-                            <div class="stat-label">Years Experience</div>
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="detail-content">
+                                <h4>Philosophy</h4>
+                                <p>Clean Code & Best Practices</p>
+                            </div>
                         </div>
                     </div>
+                    
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
                 </div>
             </div>
         </div>
@@ -139,37 +162,37 @@
                     <h3><i class="fas fa-desktop"></i> Frontend Development</h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <div class="skill-header">
-                                <i class="fab fa-html5 skill-icon html"></i>
-                                <span class="skill-name">HTML5</span>
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
                             </div>
-                            <div class="skill-level">
+                            <div class="skill-info">
+                                <h4>HTML5</h4>
                                 <div class="skill-bar">
-                                    <div class="skill-fill" data-level="95"></div>
+                                    <div class="skill-progress" data-width="95"></div>
                                 </div>
                                 <span class="skill-percent">95%</span>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-header">
-                                <i class="fab fa-css3-alt skill-icon css"></i>
-                                <span class="skill-name">CSS3</span>
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
                             </div>
-                            <div class="skill-level">
+                            <div class="skill-info">
+                                <h4>CSS3</h4>
                                 <div class="skill-bar">
-                                    <div class="skill-fill" data-level="90"></div>
+                                    <div class="skill-progress" data-width="90"></div>
                                 </div>
                                 <span class="skill-percent">90%</span>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-header">
-                                <i class="fab fa-js-square skill-icon js"></i>
-                                <span class="skill-name">JavaScript</span>
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
                             </div>
-                            <div class="skill-level">
+                            <div class="skill-info">
+                                <h4>JavaScript</h4>
                                 <div class="skill-bar">
-                                    <div class="skill-fill" data-level="85"></div>
+                                    <div class="skill-progress" data-width="85"></div>
                                 </div>
                                 <span class="skill-percent">85%</span>
                             </div>
@@ -181,41 +204,29 @@
                     <h3><i class="fas fa-server"></i> Backend Development</h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <div class="skill-header">
-                                <i class="fab fa-java skill-icon java"></i>
-                                <span class="skill-name">Java</span>
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
                             </div>
-                            <div class="skill-level">
+                            <div class="skill-info">
+                                <h4>Java</h4>
                                 <div class="skill-bar">
-                                    <div class="skill-fill" data-level="80"></div>
+                                    <div class="skill-progress" data-width="80"></div>
                                 </div>
                                 <span class="skill-percent">80%</span>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-header">
-                                <i class="fab fa-python skill-icon python"></i>
-                                <span class="skill-name">Python</span>
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
                             </div>
-                            <div class="skill-level">
+                            <div class="skill-info">
+                                <h4>Python</h4>
                                 <div class="skill-bar">
-                                    <div class="skill-fill" data-level="75"></div>
+                                    <div class="skill-progress" data-width="75"></div>
                                 </div>
                                 <span class="skill-percent">75%</span>
                             </div>
                         </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Tools & Others</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">VS Code</span>
-                        <span class="skill-tag">Responsive Design</span>
-                        <span class="skill-tag">API Integration</span>
-                        <span class="skill-tag">Database Design</span>
                     </div>
                 </div>
             </div>
@@ -232,7 +243,7 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <div class="project-badge">Featured</div>
+                        <div class="project-badge">New</div>
                         <i class="fas fa-shopping-cart project-icon"></i>
                     </div>
                     <div class="project-content">
@@ -242,13 +253,14 @@
                             <span class="tech-tag">HTML</span>
                             <span class="tech-tag">CSS</span>
                             <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
                         </div>
                         <div class="project-links">
                             <a href="#" class="project-link">
                                 <i class="fab fa-github"></i> Code
                             </a>
                             <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live
+                                <i class="fas fa-external-link-alt"></i> Live Demo
                             </a>
                         </div>
                     </div>
@@ -256,12 +268,12 @@
                 
                 <div class="project-card">
                     <div class="project-image">
-                        <div class="project-badge">New</div>
+                        <div class="project-badge">Featured</div>
                         <i class="fas fa-tasks project-icon"></i>
                     </div>
                     <div class="project-content">
                         <h3>Task Manager App</h3>
-                        <p>A productivity application for managing tasks with drag-drop functionality and reminders.</p>
+                        <p>A productivity application for managing daily tasks with drag-drop interface and team collaboration.</p>
                         <div class="project-tech">
                             <span class="tech-tag">React</span>
                             <span class="tech-tag">Node.js</span>
@@ -272,7 +284,7 @@
                                 <i class="fab fa-github"></i> Code
                             </a>
                             <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live
+                                <i class="fas fa-external-link-alt"></i> Live Demo
                             </a>
                         </div>
                     </div>
@@ -284,7 +296,7 @@
                     </div>
                     <div class="project-content">
                         <h3>Portfolio Website</h3>
-                        <p>A responsive portfolio website showcasing skills and projects with modern design.</p>
+                        <p>A responsive portfolio website with dark theme, smooth animations, and interactive elements.</p>
                         <div class="project-tech">
                             <span class="tech-tag">HTML</span>
                             <span class="tech-tag">CSS</span>
@@ -295,7 +307,7 @@
                                 <i class="fab fa-github"></i> Code
                             </a>
                             <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live
+                                <i class="fas fa-external-link-alt"></i> Live Demo
                             </a>
                         </div>
                     </div>
@@ -309,7 +321,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
-                <p class="section-subtitle">Let's work together</p>
+                <p class="section-subtitle">Let's work together!</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
@@ -317,8 +329,8 @@
                         <div class="info-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <div class="info-content">
-                            <h4>Email</h4>
+                        <div class="info-details">
+                            <h3>Email</h3>
                             <p>samath.lakshan@example.com</p>
                         </div>
                     </div>
@@ -326,8 +338,8 @@
                         <div class="info-icon">
                             <i class="fas fa-phone"></i>
                         </div>
-                        <div class="info-content">
-                            <h4>Phone</h4>
+                        <div class="info-details">
+                            <h3>Phone</h3>
                             <p>+94 77 123 4567</p>
                         </div>
                     </div>
@@ -335,23 +347,23 @@
                         <div class="info-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
-                        <div class="info-content">
-                            <h4>Location</h4>
+                        <div class="info-details">
+                            <h3>Location</h3>
                             <p>Colombo, Sri Lanka</p>
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="#" class="social-link">
+                        <a href="#" class="social-icon">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="#" class="social-link">
+                        <a href="#" class="social-icon">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="#" class="social-link">
+                        <a href="#" class="social-icon">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-codepen"></i>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
                         </a>
                     </div>
                 </div>
@@ -393,7 +405,7 @@
                     <a href="#projects">Projects</a>
                     <a href="#contact">Contact</a>
                 </div>
-                <div class="footer-bottom">
+                <div class="footer-copyright">
                     <p>&copy; 2023 Samath Lakshan. All rights reserved.</p>
                 </div>
             </div>

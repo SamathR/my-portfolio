@@ -36,3 +36,6 @@ window.addEventListener('scroll', () => {
 
 // Just to confirm JS is working
 console.log("Portfolio script loaded successfully 🚀");
+
+
+

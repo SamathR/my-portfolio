@@ -6,24 +6,21 @@
     <title>Samath Lakshan | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <h2 class="logo"><span class="logo-gradient">SL</span></h2>
+            <h2 class="logo">Samath<span class="logo-highlight">.</span></h2>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a></li>
-                <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a></li>
-                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="theme-toggle">
-                <i class="fas fa-moon" id="theme-icon"></i>
-            </div>
             <div class="hamburger" id="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
@@ -35,33 +32,42 @@
         <div class="container">
             <div class="home-content">
                 <div class="home-text">
-                    <h4 class="greeting animate__animated animate__fadeInDown">Hello, I'm</h4>
-                    <h1 class="name animate__animated animate__fadeInUp"><span class="gradient-text">Samath Lakshan</span></h1>
-                    <h2 class="title animate__animated animate__fadeInUp">Full Stack Developer</h2>
-                    <p class="tagline animate__animated animate__fadeIn">Crafting digital experiences with passion and precision</p>
+                    <p class="greeting animate__animated animate__fadeInDown">Hello, I'm</p>
+                    <h1 class="name animate__animated animate__fadeInUp">Samath Lakshan</h1>
+                    <h2 class="title animate__animated animate__fadeInUp">Full Stack <span class="highlight">Developer</span></h2>
+                    <p class="description animate__animated animate__fadeIn">
+                        I create beautiful, functional web applications with clean code and modern technologies.
+                    </p>
                     <div class="cta-buttons animate__animated animate__fadeIn">
                         <a href="#projects" class="btn btn-primary">
-                            <i class="fas fa-eye"></i> View Projects
+                            <i class="fas fa-code"></i> View Projects
                         </a>
-                        <a href="#contact" class="btn btn-outline">
-                            <i class="fas fa-paper-plane"></i> Hire Me
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-paper-plane"></i> Contact Me
                         </a>
                     </div>
                 </div>
                 <div class="home-image animate__animated animate__zoomIn">
-                    <div class="floating-shape shape-1"></div>
-                    <div class="floating-shape shape-2"></div>
-                    <div class="floating-shape shape-3"></div>
-                    <div class="hero-img">
-                        <div class="img-container">
-                            <i class="fas fa-laptop-code"></i>
+                    <div class="hero-image">
+                        <div class="image-wrapper">
+                            <div class="code-bg">
+                                <pre><code>
+<span style="color: #e06c75">const</span> developer = {
+    <span style="color: #98c379">name</span>: <span style="color: #98c379">'Samath Lakshan'</span>,
+    <span style="color: #98c379">role</span>: <span style="color: #98c379">'Full Stack Developer'</span>,
+    <span style="color: #98c379">skills</span>: [<span style="color: #98c379">'HTML'</span>, <span style="color: #98c379">'CSS'</span>, <span style="color: #98c379">'JS'</span>, <span style="color: #98c379">'Java'</span>, <span style="color: #98c379">'Python'</span>],
+    <span style="color: #98c379">passion</span>: <span style="color: #98c379">'Creating digital solutions'</span>
+};</code></pre>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="scroll-down">
-                <a href="#about"><i class="fas fa-chevron-down"></i></a>
-            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
     </section>
 
@@ -69,65 +75,53 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title"><span class="gradient-text">About Me</span></h2>
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
                 <p class="section-subtitle">Get to know me better</p>
             </div>
             <div class="about-content">
                 <div class="about-image">
-                    <div class="profile-card">
-                        <div class="card-bg"></div>
+                    <div class="profile-frame">
                         <div class="profile-img">
-                            <div class="img-wrapper">
-                                <i class="fas fa-user-ninja"></i>
-                            </div>
+                            <i class="fas fa-user-circle"></i>
                         </div>
-                        <div class="profile-info">
-                            <h3>Samath Lakshan</h3>
-                            <p>Full Stack Developer</p>
-                            <div class="stats">
-                                <div class="stat">
-                                    <span class="number">10+</span>
-                                    <span class="label">Projects</span>
-                                </div>
-                                <div class="stat">
-                                    <span class="number">5+</span>
-                                    <span class="label">Technologies</span>
-                                </div>
+                        <div class="profile-details">
+                            <div class="detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Colombo, Sri Lanka</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Computer Science Student</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="about-text">
-                    <h3>Turning <span class="gradient-text">ideas</span> into <span class="gradient-text">reality</span></h3>
-                    <p>I'm a passionate full-stack developer with a keen eye for design and a love for creating elegant, efficient solutions. My journey in tech started with curiosity and has evolved into a full-fledged passion for building digital experiences.</p>
+                    <h3>Turning Ideas into <span class="highlight">Digital Reality</span></h3>
+                    <p>
+                        I'm a passionate software developer with a focus on creating elegant solutions to complex problems. 
+                        My journey in technology began with curiosity about how things work, and it has evolved into a 
+                        dedicated pursuit of building meaningful digital experiences.
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
+                        or learning about software architecture and design patterns.
+                    </p>
                     
-                    <div class="about-details">
-                        <div class="detail">
-                            <i class="fas fa-graduation-cap"></i>
-                            <div>
-                                <h4>Education</h4>
-                                <p>BSc in Computer Science</p>
-                            </div>
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Projects Completed</div>
                         </div>
-                        <div class="detail">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Colombo, Sri Lanka</p>
-                            </div>
+                        <div class="stat">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Technologies</div>
                         </div>
-                        <div class="detail">
-                            <i class="fas fa-calendar-alt"></i>
-                            <div>
-                                <h4>Experience</h4>
-                                <p>2+ Years Coding</p>
-                            </div>
+                        <div class="stat">
+                            <div class="stat-number">2+</div>
+                            <div class="stat-label">Years Experience</div>
                         </div>
                     </div>
-                    
-                    <a href="#contact" class="btn btn-primary">
-                        <i class="fas fa-download"></i> Download CV
-                    </a>
                 </div>
             </div>
         </div>
@@ -137,46 +131,45 @@
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title"><span class="gradient-text">My Skills</span></h2>
+                <h2 class="section-title">My <span class="highlight">Skills</span></h2>
                 <p class="section-subtitle">Technologies I work with</p>
             </div>
             <div class="skills-container">
-                <!-- Frontend Skills -->
                 <div class="skill-category">
-                    <h3><i class="fas fa-paint-brush"></i> Frontend</h3>
-                    <div class="skills-grid">
+                    <h3><i class="fas fa-desktop"></i> Frontend Development</h3>
+                    <div class="skill-items">
                         <div class="skill-item">
-                            <div class="skill-icon html">
-                                <i class="fab fa-html5"></i>
+                            <div class="skill-header">
+                                <i class="fab fa-html5 skill-icon html"></i>
+                                <span class="skill-name">HTML5</span>
                             </div>
-                            <div class="skill-info">
-                                <h4>HTML5</h4>
+                            <div class="skill-level">
                                 <div class="skill-bar">
-                                    <div class="skill-progress" data-width="95%"></div>
+                                    <div class="skill-fill" data-level="95"></div>
                                 </div>
                                 <span class="skill-percent">95%</span>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-icon css">
-                                <i class="fab fa-css3-alt"></i>
+                            <div class="skill-header">
+                                <i class="fab fa-css3-alt skill-icon css"></i>
+                                <span class="skill-name">CSS3</span>
                             </div>
-                            <div class="skill-info">
-                                <h4>CSS3</h4>
+                            <div class="skill-level">
                                 <div class="skill-bar">
-                                    <div class="skill-progress" data-width="90%"></div>
+                                    <div class="skill-fill" data-level="90"></div>
                                 </div>
                                 <span class="skill-percent">90%</span>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-icon js">
-                                <i class="fab fa-js-square"></i>
+                            <div class="skill-header">
+                                <i class="fab fa-js-square skill-icon js"></i>
+                                <span class="skill-name">JavaScript</span>
                             </div>
-                            <div class="skill-info">
-                                <h4>JavaScript</h4>
+                            <div class="skill-level">
                                 <div class="skill-bar">
-                                    <div class="skill-progress" data-width="85%"></div>
+                                    <div class="skill-fill" data-level="85"></div>
                                 </div>
                                 <span class="skill-percent">85%</span>
                             </div>
@@ -184,46 +177,45 @@
                     </div>
                 </div>
                 
-                <!-- Backend Skills -->
                 <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> Backend</h3>
-                    <div class="skills-grid">
+                    <h3><i class="fas fa-server"></i> Backend Development</h3>
+                    <div class="skill-items">
                         <div class="skill-item">
-                            <div class="skill-icon java">
-                                <i class="fab fa-java"></i>
+                            <div class="skill-header">
+                                <i class="fab fa-java skill-icon java"></i>
+                                <span class="skill-name">Java</span>
                             </div>
-                            <div class="skill-info">
-                                <h4>Java</h4>
+                            <div class="skill-level">
                                 <div class="skill-bar">
-                                    <div class="skill-progress" data-width="80%"></div>
+                                    <div class="skill-fill" data-level="80"></div>
                                 </div>
                                 <span class="skill-percent">80%</span>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-icon python">
-                                <i class="fab fa-python"></i>
+                            <div class="skill-header">
+                                <i class="fab fa-python skill-icon python"></i>
+                                <span class="skill-name">Python</span>
                             </div>
-                            <div class="skill-info">
-                                <h4>Python</h4>
+                            <div class="skill-level">
                                 <div class="skill-bar">
-                                    <div class="skill-progress" data-width="75%"></div>
+                                    <div class="skill-fill" data-level="75"></div>
                                 </div>
                                 <span class="skill-percent">75%</span>
                             </div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-icon node">
-                                <i class="fab fa-node-js"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>Node.js</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="70%"></div>
-                                </div>
-                                <span class="skill-percent">70%</span>
-                            </div>
-                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">API Integration</span>
+                        <span class="skill-tag">Database Design</span>
                     </div>
                 </div>
             </div>
@@ -234,69 +226,77 @@
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title"><span class="gradient-text">My Projects</span></h2>
+                <h2 class="section-title">My <span class="highlight">Projects</span></h2>
                 <p class="section-subtitle">Some of my recent work</p>
             </div>
-            <div class="projects-container">
+            <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-img">
-                        <div class="project-overlay">
-                            <h3>E-Commerce Platform</h3>
-                        </div>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                        </div>
+                    <div class="project-image">
+                        <div class="project-badge">Featured</div>
+                        <i class="fas fa-shopping-cart project-icon"></i>
                     </div>
-                    <div class="project-info">
-                        <h3>Modern E-Commerce</h3>
-                        <p>Full-featured online shopping platform with payment integration, cart management, and admin dashboard.</p>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A modern e-commerce website with shopping cart, user authentication, and payment integration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live
+                            </a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="project-card">
-                    <div class="project-img">
-                        <div class="project-overlay">
-                            <h3>Task Manager</h3>
-                        </div>
-                        <div class="project-tech">
-                            <span>JavaScript</span>
-                            <span>Firebase</span>
-                            <span>CSS3</span>
-                        </div>
+                    <div class="project-image">
+                        <div class="project-badge">New</div>
+                        <i class="fas fa-tasks project-icon"></i>
                     </div>
-                    <div class="project-info">
-                        <h3>Productivity App</h3>
-                        <p>Intuitive task management application with real-time updates, drag-drop interface, and team collaboration.</p>
+                    <div class="project-content">
+                        <h3>Task Manager App</h3>
+                        <p>A productivity application for managing tasks with drag-drop functionality and reminders.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live
+                            </a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="project-card">
-                    <div class="project-img">
-                        <div class="project-overlay">
-                            <h3>Portfolio Website</h3>
-                        </div>
-                        <div class="project-tech">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
-                        </div>
+                    <div class="project-image">
+                        <i class="fas fa-chart-line project-icon"></i>
                     </div>
-                    <div class="project-info">
-                        <h3>Personal Portfolio</h3>
-                        <p>Responsive portfolio website with dark theme, smooth animations, and interactive elements.</p>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>A responsive portfolio website showcasing skills and projects with modern design.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -308,8 +308,8 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title"><span class="gradient-text">Get In Touch</span></h2>
-                <p class="section-subtitle">Let's work together!</p>
+                <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+                <p class="section-subtitle">Let's work together</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
@@ -317,8 +317,8 @@
                         <div class="info-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <div class="info-details">
-                            <h3>Email</h3>
+                        <div class="info-content">
+                            <h4>Email</h4>
                             <p>samath.lakshan@example.com</p>
                         </div>
                     </div>
@@ -326,8 +326,8 @@
                         <div class="info-icon">
                             <i class="fas fa-phone"></i>
                         </div>
-                        <div class="info-details">
-                            <h3>Phone</h3>
+                        <div class="info-content">
+                            <h4>Phone</h4>
                             <p>+94 77 123 4567</p>
                         </div>
                     </div>
@@ -335,16 +335,24 @@
                         <div class="info-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
-                        <div class="info-details">
-                            <h3>Location</h3>
+                        <div class="info-content">
+                            <h4>Location</h4>
                             <p>Colombo, Sri Lanka</p>
                         </div>
                     </div>
-                    <div class="social-media">
-                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-codepen"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="contact-form">
@@ -375,8 +383,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <h2><span class="gradient-text">SL</span></h2>
-                    <p>Crafting Digital Excellence</p>
+                    <h3>Samath Lakshan</h3>
+                    <p>Full Stack Developer</p>
                 </div>
                 <div class="footer-links">
                     <a href="#home">Home</a>
@@ -385,7 +393,7 @@
                     <a href="#projects">Projects</a>
                     <a href="#contact">Contact</a>
                 </div>
-                <div class="footer-copyright">
+                <div class="footer-bottom">
                     <p>&copy; 2023 Samath Lakshan. All rights reserved.</p>
                 </div>
             </div>
@@ -397,7 +405,6 @@
         <i class="fas fa-chevron-up"></i>
     </a>
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>

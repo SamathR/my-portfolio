@@ -188,3 +188,4 @@ function initTypingEffect() {
 
 // Initialize typing effect
 initTypingEffect();
+

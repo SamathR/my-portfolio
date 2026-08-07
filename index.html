@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samath Lakshan | Software Developer</title>
+    <title>Samath Lakshan | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Interactive Background -->
+    <canvas id="particle-canvas"></canvas>
+
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <h2 class="logo">Samath<span class="logo-highlight">.</span></h2>
+        <div class="container nav-container">
+            <a href="#home" class="logo">&lt;Samath <span class="accent">/</span>&gt;</a>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -26,327 +28,149 @@
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="home">
-        <div class="container">
-            <div class="home-content">
-                <div class="home-text reveal">
-                    <h4 class="greeting">Hello, I'm</h4>
-                    <h1 class="name">Samath <br><span class="highlight-text">Lakshan</span></h1>
-                    <h2 class="title">IT Undergraduate & Developer</h2>
-                    <p class="tagline">Passionate about backend development, system design, and engineering real-world scalable software solutions.</p>
-                    <div class="cta-buttons">
-                        <a href="#projects" class="btn btn-primary">
-                            <i class="fas fa-folder-open"></i> View Work
-                        </a>
-                        <a href="#contact" class="btn btn-outline">
-                            <i class="fas fa-paper-plane"></i> Contact Me
-                        </a>
+    <!-- Main Content Area -->
+    <main class="main-content">
+        
+        <!-- HOME SECTION -->
+        <section id="home" class="page-section active-section">
+            <div class="container hero-wrapper">
+                <div class="hero-info">
+                    <p class="greeting">Hello World, my name is</p>
+                    <h1 class="name">Samath Lakshan</h1>
+                    <h2 class="typewriter-text">I'm a <span class="typed-text"></span><span class="cursor">|</span></h2>
+                    <p class="bio">Passionate about backend architecture, system design, and engineering clean, scalable software solutions.</p>
+                    
+                    <div class="social-links-home">
+                        <a href="https://github.com/SamathR" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
-                <div class="home-image reveal delay-1">
+
+                <div class="hero-visuals">
                     <div class="photo-container">
-                        <!-- Add your hero photo here -->
-                        <img src="profile-photo.jpg" alt="Samath Lakshan" class="hero-photo" onerror="this.src='https://placehold.co/400x400/1e293b/00b8a9?text=Add+Your+Photo'">
-                        <div class="photo-backdrop"></div>
+                        <!-- Add your profile photo here -->
+                        <img src="profile-photo.jpg" alt="Samath Lakshan" class="my-photo" onerror="this.src='https://placehold.co/400x400/111111/00e5ff?text=Your+Photo'">
+                        <div class="photo-border"></div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-        <div class="container">
-            <div class="section-header reveal">
-                <h2 class="section-title">About <span class="highlight-text">Me</span></h2>
-                <div class="header-line"></div>
-            </div>
-            <div class="about-content">
-                <div class="about-image reveal">
-                    <div class="profile-card">
-                        <div class="profile-img">
-                            <!-- Add your secondary/about photo here -->
-                            <img src="profile-photo.jpg" alt="Samath Lakshan" class="about-photo" onerror="this.src='https://placehold.co/200x200/1e293b/00b8a9?text=Photo'">
-                        </div>
-                        <div class="profile-info">
-                            <h3>Samath Lakshan</h3>
-                            <p class="role">IT Undergraduate</p>
-                            <div class="location">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Colombo, Sri Lanka</span>
-                            </div>
-                        </div>
-                        <div class="profile-stats">
-                            <div class="stat">
-                                <div class="stat-number">10+</div>
-                                <div class="stat-label">Projects</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-number">3+</div>
-                                <div class="stat-label">Years Coding</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-text reveal delay-1">
-                    <h3>Engineering <span class="highlight-text">Ideas</span> into Reality</h3>
-                    <p>I am an undergraduate student in Information Technology with a strong interest in backend development, system administration, and software architecture. I enjoy building systems that solve practical problems.</p>
-                    <p>Through hands-on projects like the Online Vehicle Spare Parts Management System, I have gained substantial experience working with Java, databases, and version control, bridging the gap between academic theory and real-world application.</p>
-                    
-                    <div class="about-details">
-                        <div class="detail-item">
-                            <div class="detail-icon"><i class="fas fa-graduation-cap"></i></div>
-                            <div class="detail-content">
-                                <h4>Education</h4>
-                                <p>BSc (Hons) in Information Technology - SLIIT</p>
-                            </div>
-                        </div>
-                        <div class="detail-item">
-                            <div class="detail-icon"><i class="fas fa-laptop-code"></i></div>
-                            <div class="detail-content">
-                                <h4>Experience</h4>
-                                <p>Academic & Full-Stack Projects</p>
-                            </div>
-                        </div>
+        <!-- ABOUT SECTION -->
+        <section id="about" class="page-section">
+            <div class="container">
+                <h2 class="section-title">About <span class="accent">Me</span></h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>Turning Complex Logic into <span class="accent">Elegant Software</span></h3>
+                        <p>I am currently pursuing my BSc (Hons) in Information Technology at the Sri Lanka Institute of Information Technology (SLIIT). My core passion lies in the architecture of software—how data moves, how databases are structured, and how systems scale.</p>
+                        <p>Beyond theory, I actively build real-world applications. From managing database schemas for vehicle spare parts systems to implementing full-stack solutions, I thrive on hands-on development and clean code practices.</p>
+                        <a href="#" class="btn btn-solid mt-2"><i class="fas fa-download"></i> Download CV</a>
                     </div>
                     
-                    <a href="#" class="btn btn-primary mt-4">
-                        <i class="fas fa-download"></i> Download CV
-                    </a>
+                    <div class="about-skills">
+                        <h3>Core <span class="accent">Technologies</span></h3>
+                        <ul class="tech-list">
+                            <li><i class="fab fa-java"></i> Java</li>
+                            <li><i class="fab fa-python"></i> Python</li>
+                            <li><i class="fas fa-database"></i> MySQL</li>
+                            <li><i class="fab fa-js"></i> JavaScript</li>
+                            <li><i class="fab fa-html5"></i> HTML/CSS</li>
+                            <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section bg-alt">
-        <div class="container">
-            <div class="section-header reveal">
-                <h2 class="section-title">My <span class="highlight-text">Skills</span></h2>
-                <div class="header-line"></div>
-            </div>
-            <div class="skills-container">
-                <div class="skill-category reveal">
-                    <h3><i class="fas fa-server"></i> Backend & Database</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-java"></i></div>
-                            <div class="skill-info">
-                                <div class="skill-header">
-                                    <h4>Java</h4>
-                                    <span class="skill-percent">85%</span>
-                                </div>
-                                <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-python"></i></div>
-                            <div class="skill-info">
-                                <div class="skill-header">
-                                    <h4>Python</h4>
-                                    <span class="skill-percent">75%</span>
-                                </div>
-                                <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-database"></i></div>
-                            <div class="skill-info">
-                                <div class="skill-header">
-                                    <h4>MySQL</h4>
-                                    <span class="skill-percent">80%</span>
-                                </div>
-                                <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="page-section">
+            <div class="container">
+                <h2 class="section-title">Featured <span class="accent">Work</span></h2>
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h5 class="project-type">Inventory System</h5>
+                            <h3 class="project-name">Vehicle Spare Parts System</h3>
+                            <p class="project-desc">A comprehensive system managing auto-parts inventory, supplier integrations, and detailed stock tracking to optimize supply chain workflows.</p>
+                            <ul class="project-tech">
+                                <li>Java</li>
+                                <li>MySQL</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i> View Source</a>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="skill-category reveal delay-1">
-                    <h3><i class="fas fa-desktop"></i> Frontend & Tools</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-js-square"></i></div>
-                            <div class="skill-info">
-                                <div class="skill-header">
-                                    <h4>JavaScript</h4>
-                                    <span class="skill-percent">85%</span>
-                                </div>
-                                <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
-                            <div class="skill-info">
-                                <div class="skill-header">
-                                    <h4>HTML / CSS</h4>
-                                    <span class="skill-percent">90%</span>
-                                </div>
-                                <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
-                            <div class="skill-info">
-                                <div class="skill-header">
-                                    <h4>Git & GitHub</h4>
-                                    <span class="skill-percent">85%</span>
-                                </div>
-                                <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h5 class="project-type">Factory Management</h5>
+                            <h3 class="project-name">Ferndate Tea Factory System</h3>
+                            <p class="project-desc">An end-to-end management solution overseeing tea production lines, employee payrolls, and distribution logistics.</p>
+                            <ul class="project-tech">
+                                <li>MERN Stack</li>
+                                <li>Java</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/SudamNF17/FerndaleTeaFactorySystem.git" target="_blank"><i class="fab fa-github"></i> View Source</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects section">
-        <div class="container">
-            <div class="section-header reveal">
-                <h2 class="section-title">Featured <span class="highlight-text">Projects</span></h2>
-                <div class="header-line"></div>
-            </div>
-            <div class="projects-grid">
-                
-                <div class="project-card reveal">
-                    <div class="project-content">
-                        <div class="project-badge">Academic</div>
-                        <h3 class="mt-2">Online Vehicle Spare Parts System</h3>
-                        <p>Web-based system developed for managing vehicle spare parts inventory, orders, suppliers, and stock tracking.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">HTML/CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code Repository</a>
-                        </div>
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="page-section">
+            <div class="container">
+                <h2 class="section-title">Initiate <span class="accent">Connection</span></h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Let's build something brilliant.</h3>
+                        <p>I'm always open to discussing technical projects, system architecture, or potential partnerships.</p>
+                        <ul class="contact-list">
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <span>Email</span>
+                                    <p>samathlakshan091350@gmail.com</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <span>Phone</span>
+                                    <p>+94 71 701 3720</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-
-                <div class="project-card reveal delay-1">
-                    <div class="project-content">
-                        <div class="project-badge highlight-badge">Featured</div>
-                        <h3 class="mt-2">Ferndate Tea Factory System</h3>
-                        <p>Comprehensive system to manage tea factory operations, including production, inventory, and employee management.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">MERN Stack</span>
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">MySQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/SudamNF17/FerndaleTeaFactorySystem.git" target="_blank" class="project-link"><i class="fab fa-github"></i> Code Repository</a>
-                        </div>
+                    
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm">
+                            <div class="input-group">
+                                <input type="text" id="name" required placeholder=" ">
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" id="email" required placeholder=" ">
+                                <label for="email">Your Email</label>
+                            </div>
+                            <div class="input-group">
+                                <textarea id="message" rows="4" required placeholder=" "></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-solid w-100">Send Message <i class="fas fa-paper-plane"></i></button>
+                        </form>
                     </div>
-                </div>
-
-                <div class="project-card reveal delay-2">
-                    <div class="project-content">
-                        <div class="project-badge">Personal</div>
-                        <h3 class="mt-2">Developer Portfolio</h3>
-                        <p>A responsive, highly optimized personal portfolio featuring a clean dark aesthetic, smooth scrolling, and dynamic elements.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Vanilla JS</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">HTML5</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/SamathR/my-portfolio.git" target="_blank" class="project-link"><i class="fab fa-github"></i> Code Repository</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section bg-alt">
-        <div class="container">
-            <div class="section-header reveal">
-                <h2 class="section-title">Get in <span class="highlight-text">Touch</span></h2>
-                <div class="header-line"></div>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info reveal">
-                    <div class="info-card">
-                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
-                        <div class="info-details">
-                            <h3>Email</h3>
-                            <p>samathlakshan091350@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-icon"><i class="fas fa-phone"></i></div>
-                        <div class="info-details">
-                            <h3>Phone</h3>
-                            <p>+94 71 701 3720</p>
-                        </div>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="info-details">
-                            <h3>Location</h3>
-                            <p>Negombo, Sri Lanka</p>
-                        </div>
-                    </div>
-                    <div class="social-links mt-4">
-                        <a href="https://github.com/SamathR" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                
-                <div class="contact-form reveal delay-1">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-                    </form>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h2>Samath<span class="logo-highlight">.</span></h2>
-                </div>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                </div>
-                <div class="footer-copyright">
-                    <p>&copy; 2026 Samath Lakshan. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back to Top -->
-    <a href="#home" class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </a>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>

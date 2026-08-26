@@ -7,6 +7,14 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 };
 
+var typed = new Typed(".text", {
+    strings: ["Backend Developer" , "IT Undergraduate"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+});
+
 // Highlight active section navbar link on scroll
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('header nav a');
@@ -30,3 +38,4 @@ window.onscroll = () => {
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 };
+

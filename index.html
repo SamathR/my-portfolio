@@ -3,174 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samath Lakshan | Portfolio</title>
+    <title>W S L Ravihara | Backend Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Boxicons for modern UI icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <!-- Interactive Background -->
-    <canvas id="particle-canvas"></canvas>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#home" class="logo">&lt;Samath <span class="accent">/</span>&gt;</a>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
+    <!-- Header Navigation -->
+    <header class="header">
+        <a href="#home" class="logo">Ravihara.</a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I'm</h3>
+            <h1>W S L Ravihara</h1>
+            <p class="subtitle">Student ID: IT23585812</p>
+            <h3>Backend Developer & IT Undergraduate</h3>
+            <p>Third-year IT Undergraduate at SLIIT passionate about building scalable backend architectures, database schema optimization, REST APIs, and efficient algorithms.</p>
+            
+            <div class="social-media">
+                <a href="#" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="#" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="mailto:your.email@example.com"><i class='bx bx-envelope'></i></a>
+            </div>
+
+            <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        
+        <div class="about-content">
+            <h3>Backend Engineering & Data Architecture Focus</h3>
+            <p>I am a third-year undergraduate student at the Sri Lanka Institute of Information Technology (SLIIT). My core passion lies in building efficient server-side architectures, database design, and procedural data processing.</p>
+            
+            <div class="info-box">
+                <p><strong>Institution:</strong> Sri Lanka Institute of Information Technology (SLIIT)</p>
+                <p><strong>Specialization:</strong> Software Engineering / Backend Systems</p>
+                <p><strong>Certifications:</strong> MongoDB Relational to Document Model Skill Badge (Credly)</p>
             </div>
         </div>
-    </nav>
+    </section>
 
-    <!-- Main Content Area -->
-    <main class="main-content">
-        
-        <!-- HOME SECTION -->
-        <section id="home" class="page-section active-section">
-            <div class="container hero-wrapper">
-                <div class="hero-info">
-                    <p class="greeting">Hello World, my name is</p>
-                    <h1 class="name">Samath Lakshan</h1>
-                    <h2 class="typewriter-text">I'm a <span class="typed-text"></span><span class="cursor">|</span></h2>
-                    <p class="bio">Passionate about backend architecture, system design, and engineering clean, scalable software solutions.</p>
-                    
-                    <div class="social-links-home">
-                        <a href="https://github.com/SamathR" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
 
-                <div class="hero-visuals">
-                    <div class="photo-container">
-                        <!-- Add your profile photo here -->
-                        <img src="profile-photo.jpg" alt="Samath Lakshan" class="my-photo" onerror="this.src='https://placehold.co/400x400/111111/00e5ff?text=Your+Photo'">
-                        <div class="photo-border"></div>
-                    </div>
+        <div class="skills-container">
+            <div class="skills-box">
+                <i class='bx bxl-java'></i>
+                <h3>Java & Backend Architecture</h3>
+                <p>Designing Object-Oriented backend services, robust execution flow, and clean API endpoints.</p>
+            </div>
+
+            <div class="skills-box">
+                <i class='bx bxl-python'></i>
+                <h3>Python & Automation</h3>
+                <p>Scripting backend processing, automated test suites, and fast algorithmic prototyping.</p>
+            </div>
+
+            <div class="skills-box">
+                <i class='bx bx-data'></i>
+                <h3>SQL & MongoDB</h3>
+                <p>Relational database modeling, query optimization, and migrating relational structures into NoSQL document stores.</p>
+            </div>
+
+            <div class="skills-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Data Structures & Algorithms</h3>
+                <p>Applying optimal data structures, asymptotic notation (Big-O), and efficient algorithmic logic to technical problems.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="heading">Featured <span>Projects</span></h2>
+
+        <div class="projects-container">
+            <div class="project-card">
+                <i class='bx bx-cog project-icon'></i>
+                <h3>Vehicle Spare Parts Management System</h3>
+                <p>Designed and built an enterprise inventory system focusing on normalized SQL schemas, transaction management, and robust backend functionality.</p>
+                <div class="tech-stack">
+                    <span>Java</span>
+                    <span>SQL</span>
+                    <span>REST API</span>
                 </div>
             </div>
-        </section>
 
-        <!-- ABOUT SECTION -->
-        <section id="about" class="page-section">
-            <div class="container">
-                <h2 class="section-title">About <span class="accent">Me</span></h2>
-                <div class="about-grid">
-                    <div class="about-text">
-                        <h3>Turning Complex Logic into <span class="accent">Elegant Software</span></h3>
-                        <p>I am currently pursuing my BSc (Hons) in Information Technology at the Sri Lanka Institute of Information Technology (SLIIT). My core passion lies in the architecture of software—how data moves, how databases are structured, and how systems scale.</p>
-                        <p>Beyond theory, I actively build real-world applications. From managing database schemas for vehicle spare parts systems to implementing full-stack solutions, I thrive on hands-on development and clean code practices.</p>
-                        <a href="#" class="btn btn-solid mt-2"><i class="fas fa-download"></i> Download CV</a>
-                    </div>
-                    
-                    <div class="about-skills">
-                        <h3>Core <span class="accent">Technologies</span></h3>
-                        <ul class="tech-list">
-                            <li><i class="fab fa-java"></i> Java</li>
-                            <li><i class="fab fa-python"></i> Python</li>
-                            <li><i class="fas fa-database"></i> MySQL</li>
-                            <li><i class="fab fa-js"></i> JavaScript</li>
-                            <li><i class="fab fa-html5"></i> HTML/CSS</li>
-                            <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
-                        </ul>
-                    </div>
+            <div class="project-card">
+                <i class='bx bx-store project-icon'></i>
+                <h3>Ferndale Tea Factory System</h3>
+                <p>Developed an operational system for managing tea processing batches, raw material metrics, and inventory records with optimized database queries.</p>
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>SQL</span>
+                    <span>Backend Architecture</span>
                 </div>
             </div>
-        </section>
 
-        <!-- PROJECTS SECTION -->
-        <section id="projects" class="page-section">
-            <div class="container">
-                <h2 class="section-title">Featured <span class="accent">Work</span></h2>
-                <div class="project-grid">
-                    <!-- Project 1 -->
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h5 class="project-type">Inventory System</h5>
-                            <h3 class="project-name">Vehicle Spare Parts System</h3>
-                            <p class="project-desc">A comprehensive system managing auto-parts inventory, supplier integrations, and detailed stock tracking to optimize supply chain workflows.</p>
-                            <ul class="project-tech">
-                                <li>Java</li>
-                                <li>MySQL</li>
-                            </ul>
-                            <div class="project-links">
-                                <a href="#"><i class="fab fa-github"></i> View Source</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h5 class="project-type">Factory Management</h5>
-                            <h3 class="project-name">Ferndate Tea Factory System</h3>
-                            <p class="project-desc">An end-to-end management solution overseeing tea production lines, employee payrolls, and distribution logistics.</p>
-                            <ul class="project-tech">
-                                <li>MERN Stack</li>
-                                <li>Java</li>
-                            </ul>
-                            <div class="project-links">
-                                <a href="https://github.com/SudamNF17/FerndaleTeaFactorySystem.git" target="_blank"><i class="fab fa-github"></i> View Source</a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="project-card">
+                <i class='bx bx-mobile-alt project-icon'></i>
+                <h3>Restaurant Reservation & FitFlow UX Systems</h3>
+                <p>Conducted human-computer interaction studies, usability benchmarks, requirement matrices, and application wireframing.</p>
+                <div class="tech-stack">
+                    <span>HCI Research</span>
+                    <span>UI/UX</span>
+                    <span>Usability Benchmarking</span>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- CONTACT SECTION -->
-        <section id="contact" class="page-section">
-            <div class="container">
-                <h2 class="section-title">Initiate <span class="accent">Connection</span></h2>
-                <div class="contact-wrapper">
-                    <div class="contact-info">
-                        <h3>Let's build something brilliant.</h3>
-                        <p>I'm always open to discussing technical projects, system architecture, or potential partnerships.</p>
-                        <ul class="contact-list">
-                            <li>
-                                <i class="fas fa-envelope"></i>
-                                <div>
-                                    <span>Email</span>
-                                    <p>samathlakshan091350@gmail.com</p>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-phone-alt"></i>
-                                <div>
-                                    <span>Phone</span>
-                                    <p>+94 71 701 3720</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="contact-form-wrapper">
-                        <form id="contactForm">
-                            <div class="input-group">
-                                <input type="text" id="name" required placeholder=" ">
-                                <label for="name">Your Name</label>
-                            </div>
-                            <div class="input-group">
-                                <input type="email" id="email" required placeholder=" ">
-                                <label for="email">Your Email</label>
-                            </div>
-                            <div class="input-group">
-                                <textarea id="message" rows="4" required placeholder=" "></textarea>
-                                <label for="message">Your Message</label>
-                            </div>
-                            <button type="submit" class="btn btn-solid w-100">Send Message <i class="fas fa-paper-plane"></i></button>
-                        </form>
-                    </div>
-                </div>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
             </div>
-        </section>
-    </main>
+            <div class="input-box">
+                <input type="text" placeholder="Subject">
+                <input type="text" placeholder="Student ID / Organization">
+            </div>
+            <textarea cols="30" rows="8" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2026 W S L Ravihara | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

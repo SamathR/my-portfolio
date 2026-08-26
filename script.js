@@ -194,3 +194,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     console.log('%c🚀 W S L Ravihara Portfolio loaded successfully!', 'color: #00adb5; font-size: 14px; font-weight: bold;');
 });
+

@@ -78,6 +78,10 @@ section {
     font-weight: 600;
 }
 
+.home-content h3 span {
+    color: #0ef;
+}
+
 .home-content h1 {
     font-size: 4rem;
     font-weight: 800;
@@ -155,6 +159,7 @@ section {
     color: var(--main-color);
     margin-bottom: 1rem;
 }
+
 
 .about-content p {
     font-size: 1.1rem;

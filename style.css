@@ -135,6 +135,7 @@ img {
 .gradient-text {
     background: var(--accent-gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
 }
@@ -228,8 +229,8 @@ img {
     left: 0;
     right: 0;
     z-index: 1000;
-    backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
     background-color: var(--nav-bg);
     border-bottom: 1px solid var(--card-border);
     transition: all var(--transition-normal);
@@ -283,10 +284,9 @@ img {
 }
 
 .logo-text {
-    background: var(--text-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: var(--text-primary);
+    color: var(--text-primary);
     font-weight: 700;
+    transition: color var(--transition-fast);
 }
 
 .logo:hover .logo-text {
